@@ -8,12 +8,18 @@ Modelo de autenticação aplicando os conceitos de **Token** e **Refresh Token**
 
 ### Ferramentas e Tecnologias
 <div display='flex' flex-direction='row'>
-    <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" width="40" height="40"/>
-    <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height="40"/>
-    <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="40" height="40"/>
+    <a href='https://nodejs.org/en/about'>
+        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" width="40" height="40"/>
+    </a>
+    <a href='https://react.dev/'>
+        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height="40"/>
+    </a>
+    <a href='https://www.typescriptlang.org/'>
+        <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="40" height="40"/>
+    </a>
 </div>
 
 ### Principais Libs
-[Axios](https://axios-http.com/ptbr/docs/intro) no FrontEnd
-[Fastify](https://axios-http.com/ptbr/docs/intro) no BackEnd         
+[Axios](https://axios-http.com/ptbr/docs/intro) no FrontEnd.  
+[Fastify](https://axios-http.com/ptbr/docs/intro) no BackEnd.           
           
