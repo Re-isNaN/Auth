@@ -7,7 +7,7 @@ Modelo de autenticação aplicando os conceitos de **Token** e **Refresh Token**
 **Silent Refresh** e com um fluxo de autenticação **bem definido**.
 
 ### Ferramentas e Tecnologias
-<div display='flex' flex-direction='row' gap="10px">
+<div display='flex' flex-direction='row' gap="100">
     <a href='https://nodejs.org/en/about'>
         <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" width="40px" height="40px"/>
     </a>
