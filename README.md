@@ -6,10 +6,11 @@
 Modelo de autenticação aplicando os conceitos de **Token** e **Refresh Token**, 
 **Silent Refresh** e com um fluxo de autenticação **bem definido**.
 
+
 <p>
- <a href="#Ferramentas e Tecnologias">Ferramentas</a> •
- <a href="#Principais Libs">Libs</a> • 
- <a href="#Fluxo de Autenticação">Fluxo</a>
+ <a href="#ferramentas-e-tecnologias">Ferramentas</a> •
+ <a href="#principais-libs">Libs</a> • 
+ <a href="#fluxo-de-autenticação">Fluxo</a>
 </p>
 
 
