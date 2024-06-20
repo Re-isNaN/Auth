@@ -1,8 +1,11 @@
-# Modelo de autenticação usando Node e React com typescript
+# Modelo de Autenticação
 
 ## Descrição
-Modelo de autenticação aplicando os conceitos de **Token** e **Refresh Token**, 
-**Silent Refresh** e com um fluxo de autenticação **bem definido**.
+Modelo simples de autenticação usando **Node** e **React** com **TypeScript**, aplicando os conceitos de **Token** e **Refresh Token**, 
+**Silent Refresh** e com um **fluxo de autenticação bem definido**. Baseado no envio de cookies e headers para possibilitar o acesso ao servidor
+por meio de rotas protegidas, utilizando-se no server-side plugins do @fastify para verificação, validação e criação dos tokens, enquanto no client-side
+utiliza-se o axios para a comunicação com o servidor e interceptadores de resposta para atualizar tokens ou, em caso de erro, redirecionar 
+o cliente para a página de login.
 
 
 <p>
