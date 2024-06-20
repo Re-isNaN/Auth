@@ -27,36 +27,20 @@ Modelo de autenticação aplicando os conceitos de **Token** e **Refresh Token**
 
 ### Fluxo de Autenticação
 ```mermaid
-graph TD;
-    front[FRONTEND];
-    back[BACKEND];
-    login[Login];
-    home[Home];
-    state[Estado Autenticado];
-    middlewareAuth[Middleware de Autenticação];
-    rotaRefresh[Rota /auth/refresh];
-    rota[Rota];
-    accessToken[Access Token];
-    verifyToken[Verificar Token];
-    dados[Dados];
-
-    front --- login;
-    front --- middlewareAuth;
-    back --- rota;
-    back --- rotaRefresh;
-    login --> state;
-    state -->|true| home;
-    home --> rota;
-    state -->|false| login;
-    middlewareAuth --> |Req| rotaRefresh;
-    middlewareAuth --> |Reply OK| dados;
-    middlewareAuth --> |Reply Erro -> Redirect| login;
-    rotaRefresh -->|Reply| middlewareAuth;
-    rota -->|Protegida| accessToken;
-    rota -->|Desprotegida| dados;
-    accessToken --> verifyToken;
-    verifyToken -->|Erro access token invalido 401| middlewareAuth
-    verifyToken --> |Válido| dados;
-    dados --> |Reply| home;
+sequenceDiagram
+    participant CLIENTE
+    participant SERVIDOR
+    CLIENTE->>SERVIDOR: Enviar Access Token
+    SERVIDOR->>SERVIDOR: Verifica Token
+    alt Token Válido
+        SERVIDOR-->>CLIENTE: Retorna Dados Normais
+    else Token Inválido
+        SERVIDOR-->>CLIENTE: Retorna Erro
+        alt Tipo de Erro: Access Token Inválido
+            CLIENTE->>SERVIDOR: Atualizar Token
+        else Outro Tipo de Erro
+            CLIENTE->>CLIENTE: Redireciona para Pagina Login
+        end
+    end
 
           
