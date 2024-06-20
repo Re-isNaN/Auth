@@ -1,6 +1,4 @@
-# Auth
-
-## Modelo de autenticação usando Node e React com typescript
+# Modelo de autenticação usando Node e React com typescript
 
 ## Descrição
 Modelo de autenticação aplicando os conceitos de **Token** e **Refresh Token**, 
