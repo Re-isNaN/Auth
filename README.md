@@ -36,6 +36,7 @@ sequenceDiagram
         SERVIDOR-->>CLIENTE: Retorna Dados Normais
     else Token Inválido
         SERVIDOR-->>CLIENTE: Retorna Erro
+        CLIENTE->>CLIENTE: MiddleAuth: Processa Erro 
         alt Tipo de Erro: Access Token Inválido
             CLIENTE->>SERVIDOR: Atualizar Token
         else Outro Tipo de Erro
